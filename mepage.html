@@ -1,18 +1,186 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
 <body>
+    <nav class="navbar sticky-top">
+        <div class="navcontainer">
+            <a href="landing.html" id="logo">IIAC</a> <span id="span">Information In A Click</span>
+        </div>
+        <ul class="nav justify-content-end sticky-top">
+            <li class="nav-item">
+                <a class="nav-link" href="landing.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mepage.html">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link btn" id="logbtn" href="signup.html">Login</button>
+            </li>
+        </ul>
+    </nav>
 
-<h1>The Main Languages of the Web</h1>
+    <header class="header6">
+        <div class="containimage">
+            <div class="headercontainer">
+                <h2>There's more to you than you can imagine.</h2>
+            </div>
+            <hr style="border-color: #FFFFFF;">
+            <div style="color: white; font-size: larger;">
+                <ul class="nav justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myRecords">My Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myMeds">My Medications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myReminders">My Reminders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <section>
+            <p>
+                User friendly and efficient, the IIAC is here to better the lives of fellow inhabitants of third world
+                countries. Carrying a health book isn't always effective thus the purpose of this website. With access
+                to
+                one's files anywhere and everywhere around the globe, any patient is now able to access his information
+                in a
+                click.
+                <a style="color: #00A6FF;" href="#collapse" data-toggle="collapse">Learn more...</a>
+            </p>
+        </section>
+        <section id="collapse" class="collapse">
+            This technology comes in handy for people often forget where they put papers or store files in general.
+            Having everything on your phone helps as a backup in case of an unprecendented event as well. With IIAC,
+            your information is utterly confidential and secured. Encryption technology is used to secure files,
+            usernames and passwords. Furthermore, a user doesn't have the right or ability to tamper his or her own
+            medical records as this might bring about confusion for future medical interventions. Click <a
+                style="color: #00A6FF;" href="#">Here</a> to learn more about our Terms of Use and Conditions.
+        </section>
+        <br>
+        <hr style="border-color: #00A6FF;">
+        <br>
+        <br>
+        <section id="myRecords">
+            <h3>My Records</h3>
+            <p>The IIAC provides a cloud storage place for any sort of medically approved files. This allows a patient
+                to upload an x-ray image done or just a prespriction from a doctor. Patients will have access to these
+                anytime they're logged into IIAC's website.</p>
+        </section>
+        <section id="myMeds">
+            <h3>My Medications</h3>
+            <p>Knowing the right medication is vital for any sort of patient despite the seriousness of their disease or
+                condition. "My medication" helps patients keep track of their medicines and provides details about each
+                one; what it does, when it was prescribed, what hospital prescribed it and more. This is helpful for
+                patients who visit different institutions so their medical history is clear and concise. </p>
+        </section>
+        <section id="myReminders">
+            <h3>My Reminders</h3>
+            <p>An entry system to create a log of different medications and medical appointments established by the
+                patient himself is available here. Reminders are crucial for most people and having a website that
+                doesn't only compile all of your medical information in one place but also helps you keep track of your
+                conditions to get better is a need in the 21st century. Poeple may have so much going on that they tend
+                to forget what matters which is why IIAC got your back. </p>
+        </section>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <hr style="border-color: #00A6FF;">
+    </div>
+    <br>
+    <br>
+    <div class="container" style="text-align: center;">
+        <button style="background-color: #00A6FF;" class="btn btn-primary">Sign Up Today !</button>
+        <br>
+        <br>
+        <p>
+            Free of charge for the first 6 months. <br>
+            We want to enhance your experience with CORE.
+        </p>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-light">
+        <div class="container">
+            <br>
+            <br>
+            <div class="row">
 
-<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+                <div class="col">
+                    <h6>Discalimer</h6>
+                    <p>
+                        The IIAC website was built solely for learning purposes and for the Nextech Coding
+                        Competition 2020. Pictures and statistic do not belong to IIAC. Any and every information
+                        here was brought by Jeff Priso, who holds the rights to this website.
+                    </p>
+                </div>
+                <div class="col">
+                    <h6>About Us</h6>
+                    <p>
+                        The IIAC Co. is a team of well informed and trained technologists. Ranging from medical
+                        careers to UX careers and everything in between, the IIAC team is well equiped to enhance
+                        health care in third world coutries.
+                    </p>
+                </div>
+                <div class="col">
+                    <h6>Contact Us</h6>
+                    <p>
+                        Institutions and individuals can contact us using any of the following means.
+                    </p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <br>
 
-<hr>
+            <hr style="border-top:.5px solid #00A6FF;">
+            </hr>
 
-<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
-
-<hr>
-
-<p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p>
-
+            <br>
+            <div class="row">
+                <a class="col" href="#">Careers</a>
+                <a class="col" href="#">Terms</a>
+                <a class="col" href="#">Partnerships</a>
+                <a class="col" href="#">Comments</a>
+                <a class="col" href="#">Donate</a>
+            </div>
+            <br>
+            <br>
+            <p style="text-align: center;">@ 2020 Jeff Priso IIAC. All rights reserved.</p>
+        </div>
+        <br>
+        <br>
+    </footer>
 </body>
-</html>
 
+</html>

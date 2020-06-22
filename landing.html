@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IIAC: Information In A Click</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -24,45 +25,27 @@
 
     </head>
 
-    <body>
+    <body id="main">
         <nav class="navbar sticky-top">
 
             <div class="navcontainer">
-                <a href="landing.html" id="logo">IIAC
-                    <span id="span">Information In A Click</span>
-                </a>
+                <a href="landing.html" id="logo">IIAC</a> <span id="span">Information In A Click</span>
             </div>
             <ul class="nav justify-content-end sticky-top">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link active" href="landing.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Me</a>
+                    <a class="nav-link" href="mepage.html">Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="aboutus.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="logbtn" href="#">Login</a>
+                    <button class="nav-link btn" id="logbtn" href="signup.html">Login</button>
                 </li>
             </ul>
         </nav>
-        <!-- nyamas 
-      <nav>
-        <div class="navcontainer">
-            <h3>IIAC</h3><span class="IIAC">INFORMATION IN A CLICK</span>
-        </div>
-
-        <div class="menulist">
-            <ul>
-                <li class="li1"><a href="">Home</a></li>
-                <li class="li2"><a href="">Me</a></li>
-                <li class="li3"><a href="">About</a></li>
-            </ul>
-        </div>
-        
-    </nav>
-    -->
         <!-- header -->
         <header class="header1">
             <div class="containimage">
@@ -73,6 +56,27 @@
             </div>
         </header>
 
+        <br>
+        <br>
+        <div id="pop-up">
+            <button style="background-color: rgba(255, 255, 255, 0); border-style: hidden; float: right; font-size: x-large; color: white;" id="close-btn">X</button>
+            <h3 style="color: white;">Sign Up For Free Today!</h3>
+            <h4>A place for your medical history and your health improvement. </h4>
+            <hr>
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="name" id="usr" name="username">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="pwd">Password:</label> -->
+                  <input type="text" class="form-control" placeholder="email" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" id="pwd" name="password">
+                  </div>
+                <button type="submit" class="btn" style="background-color: white; color: #00A6FF;" >Submit</button>
+              </form>
+            </div>
         <br>
         <br>
 
@@ -142,7 +146,7 @@
                 </section>
                 <br>
                 <br>
-                <div class="row" style="text-align: center;">
+                <!-- <div class="row" style="text-align: center;">
                     <div class="stats col">
                         <img src="stat1.png" alt="" class="stat1">
                         <div class="overlay">
@@ -163,7 +167,7 @@
                                 <div class="card-title">ITN's availability</div>
                             </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <br>
@@ -279,7 +283,7 @@
                     <div class="col">
                         <h6>Contact Us</h6>
                         <p>
-                            Instituions and individuals can contact us using any of the following means.
+                            Institutions and individuals can contact us using any of the following means.
                         </p>
                         <a href="#" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
@@ -294,10 +298,10 @@
                 <br>
                 <div class="row">
                     <a class="col" href="#">Careers</a>
-                    <a class="col" href="#">Investors</a>
+                    <a class="col" href="#">Terms</a>
                     <a class="col" href="#">Partnerships</a>
                     <a class="col" href="#">Comments</a>
-                    <a class="col" href="#">Terms</a>
+                    <a class="col" href="#">Donate</a>
                 </div>
                 <br>
                 <br>
