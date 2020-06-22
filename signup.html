@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="signform container">
+            <h2>IICA <br> Login </h2>
+            <br>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Individual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Institution</a>
+                </li>
+            </ul>   
+            <br>
+            <hr> 
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="name" id="usr" name="username">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="pwd">Password:</label> -->
+                  <input type="text" class="form-control" placeholder="email" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" id="pwd" name="password">
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+
+    </div>
+</body>
+</html>
