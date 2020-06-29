@@ -26,6 +26,11 @@
 
 
 $(document).ready(function(){
+    // $("#logbtn").click(function(){
+    //     $(".landing").slideDown();
+    //     $(".login").slideUp();
+
+    // })
     // var stopAutohide;
 function showWindow(){
     $('#pop-up').show();
@@ -53,8 +58,7 @@ function hideWindow(){
         hideWindow();
         // clearTimeout(stopAutohide);
     })
-
-    $(".logbtn").click(function(){
-        $(".login").show();
-    })
+$("form").submit(function(){
+    alert("Submitted.")
+});
 })
