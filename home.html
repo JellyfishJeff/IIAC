@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIAC: Information In A Click</title>
+    <title>IIAC:Information In A Click</title>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&amp;family=Roboto:wght@300&amp;display=swap"
         rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
@@ -17,86 +17,197 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="patient.css">
+    <script src="patient.js"></script>
 </head>
 
 <body>
-    <!-- navigation -->
+    <nav class="navbar sticky-top" style="background-color: rgba(255,255,255,.5); font-size: larger;">
 
-    </head>
-
-    <body id="main">
-        <div class="landing">
-            <nav class="navbar sticky-top">
-
-                <div class="navcontainer">
-                    <a href="landing.html" id="logo">IIAC</a> <span id="span">Information In A Click</span>
-                </div>
-                <ul class="nav justify-content-end sticky-top">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="landing.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mepage.html">Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn" onclick="document.location='signup.html'" id="logbtn">Login</button>
-                    </li>
-                </ul>
-            </nav>
-            <!-- header -->
-            <header class="header1">
-                <div class="containimage">
-                    <div class="headercontainer">
-                        <h1>Access Medical Records and Information in a Single Click</h1>
-                    </div>
-                    <button class="btn" id="free" onclick="document.location='signup.html'">Try IIAC for free !</button>
-                </div>
-            </header>
-            <br>
-            <div id="pop-up">
-                <button
-                    style="background-color: rgba(255, 255, 255, 0); border-style: hidden; float: right; font-size: x-large; color: white;"
-                    id="close-btn">X</button>
-                <h3 style="color: white;">Sign Up For Free Today!</h3>
-                <h4>A place for your medical history and your health improvement. </h4>
-                <hr>
-                <form action="/action_page.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="name" id="usr" name="username">
-                    </div>
-                    <div class="form-group">
-                        <!-- <label for="pwd">Password:</label> -->
-                        <input type="text" class="form-control" placeholder="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="password" id="pwd" name="password">
-                    </div>
-                    <button type="submit" class="btn" style="background-color: white; color: #00A6FF;">Submit</button>
-                </form>
+        <div>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn" style="background-color: #00A6FF; color: white;" type="submit">Search</button>
+            </form>
+        </div>
+        <ul class="nav nav-pills justify-content-end sticky-top" style="color: #00A6FF;">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="me.html">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="upload.html">Upload</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">My profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header1">
+        <div class="containimage">
+            <div class="headercontainer">
+                <h1 style="color: #00A6FF;">You are in control</h1>
             </div>
+            <button class="btn" id="free">What's New?</button>
+        </div>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <img src="picture21.jpg" style="width:100%">
+            </div>
+            <div class="col-4">
+                <h3>The COVID-19 Pandemic </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis hic esse vero deleniti
+                    tempora reprehenderit numquam, culpa a ratione eum ad quibusdam nesciunt odit dolorem? Sit, debitis
+                    voluptatibus! Distinctio.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h3>Depression & Anxiety: Coping Groups in your Surroundings</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis hic esse vero deleniti
+                    tempora reprehenderit numquam, culpa a ratione eum ad quibusdam nesciunt odit dolorem? Sit, debitis
+                    voluptatibus! Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque, cum
+                    consequatur earum harum enim praesentium accusamus aspernatur in nobis error ab tempora blanditiis
+                    inventore labore commodi molestias, debitis culpa.
+                </p>
+            </div>
+            <div class="col-8">
+                <img src="picture22.jpeg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-8">
+                <img src="picture23.jpg" style="width:100%">
+            </div>
+            <div class="col-4">
+                <h3>How to cope with your anxiety</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis hic esse vero deleniti
+                    tempora reprehenderit numquam, culpa a ratione eum ad quibusdam nesciunt odit dolorem? Sit, debitis
+                    voluptatibus! Distinctio. <a style="color: #00A6FF;"
+                        href="https://mentalhealth.openpathcollective.org/">Learn more...</a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h3>What message on depression and anxiety does the data convey ?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis hic esse vero deleniti
+                    tempora reprehenderit numquam, culpa a ratione eum ad quibusdam nesciunt odit dolorem? Sit, debitis
+                    voluptatibus! Distinctio.
+                </p>
+            </div>
+            <div class="col-8">
+                <img src="picture24.png" style="width:100%">
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <br>
+        <hr style="border-top:.5px solid #00A6FF;">
+        </hr>
+        <br>
+        <h3 style="text-align: center;">Your Annual Highlights</h3>
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-area-chart" style="font-size:48px; text-align: center; color: #00A6FF;"></i>
+                <p>
+                   Statistics on your condition has shown progress for the past year. You're killing it !
+                </p>
+            </div>
+            <div class="col">
+                <i class="fa fa-bell" style="font-size:48px;color:#00A6FF"></i>
+                <p>
+                    You respected all your reminders. Keep at it! You're only improving your health.
+                </p>
+            </div>
+            <div class="col">
+                <i class="fa fa-book" style="font-size:48px;color:#00A6FF"></i>
+                <p>
+                  You visited some information regarding other medical conditions other than depression and anxiety.
+                </p>
+            </div>
+            <div class="col">
+                <i class="fa fa-fighter-jet" style="font-size:48px;color:#00A6FF"></i>
+                <p>
+                   You used IIAC to access your medical records in a different location and institution.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-light">
+        <div class="container">
             <br>
-            <div class="container">
-                <section class="test w3-container w3-center w3-animate-opacity">
+            <br>
+            <div class="row">
+
+                <div class="col">
+                    <h6>Discalimer</h6>
                     <p>
-                        IIAC, Information In A Click is a system built for developing countries to augment medical
-                        service
-                        efficiency. Health care is still growing in developing countries and has a long way to go.
-                        Nevertheless,
-                        with tools like IIAC built for individuals as well as instituions, one can now educate himself
-                        on
-                        existing conditions and
-                        keep track of his or her medical records. On a bigger scale, IIAC is used by different medical
-                        institutions
-                        established in developing countries to serve as some sort of HIS, Hospital Information System
-                        and
-                        RIS, Radiology
-                        Information System and effectively keep a record of thousands of different patients accross the
-                        world.
+                        The IIAC website was built solely for learning purposes and for the Nextech Coding
+                        Competition 2020. Pictures and statistic do not belong to IIAC. Any and every
+                        information
+                        here was brought by Jeff Priso, who holds the rights to this website.
                     </p>
-                </section>
+                </div>
+                <div class="col">
+                    <h6>About Us</h6>
+                    <p>
+                        The IIAC Co. is a team of well informed and trained technologists. Ranging from medical
+                        careers to UX careers and everything in between, the IIAC team is well equiped to
+                        enhance
+                        health care in third world coutries.
+                    </p>
+                </div>
+                <div class="col">
+                    <h6>Contact Us</h6>
+                    <p>
+                        Institutions and individuals can contact us using any of the following means.
+                    </p>
+                    <a href="https://facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+                    <a href="mailto:prisoeli0@gmail.com" class="fa fa-google"></a>
+                    <a href="https://linkedIn.com" class="fa fa-linkedin"></a>
+                </div>
             </div>
+            <br>
+
+            <hr style="border-top:.5px solid #00A6FF;">
+            </hr>
+
+            <br>
+            <div class="row">
+                <a class="col" href="#">Careers</a>
+                <a class="col" href="#">Terms</a>
+                <a class="col" href="#">Partnerships</a>
+                <a class="col" href="#">Comments</a>
+                <a class="col" href="#">Donate</a>
+            </div>
+            <br>
+            <br>
+            <p style="text-align: center;">@ 2020 Jeff Priso IIAC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
