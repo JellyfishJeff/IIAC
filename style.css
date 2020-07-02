@@ -408,6 +408,11 @@ text-shadow: 3px 4px black;
     margin: 5px 2px;
     text-decoration: none;
 }
+.fa:hover{
+    background-color: rgba(80, 72, 72, 0.2);
+    text-decoration: none;
+    color: white;
+}
 .fa-facebook {
     background: #00A6FF;
     color: white;

@@ -15,14 +15,13 @@ body{
 }
 h1{
     color: #00A6FF;
-    margin-top:20%;
-    margin-left: 10%;
-    text-align: left;
+    margin-top:10%;
+    text-align: center;
     font-size: 60px;
     font-weight: bold;
     color: #fff;
-    position: relative;
-    animation: mymove 5s;
+    /* position: relative;
+    animation: mymove 5s; */
 	
 }
 h3{
@@ -32,19 +31,15 @@ h6{
     color: #00A6FF;
 }
 #free{
-    margin-left: 10%;
-    color: #00A6FF;
+    color: #fff;
     font-size: large;
-    border-color: white;
-    width: 170px;
 }
-#free:hover{
-    background-color: rgba(255,255,255,.5);
-    color: black;
+i:hover{
+    color: grey;
 }
-.headercontainer{
-	display: flex;
-}
+/* .headercontainer{
+	text-align: center;
+} */
 .containimage{
 	height:inherit;
 	width: inherit;
@@ -72,19 +67,58 @@ h6{
     background: #00A6FF;
     color: white;
   }
-  
+  .fa-book{
+    background: #00A6FF;
+    color: white;
+  }
+  .fa-area-chart{
+    background: #00A6FF;
+    color: white;
+  }
+  .fa-bell{
+        background: #00A6FF;
+        color: white;
+  }
+  .fa-fighter-jet{
+    background: #00A6FF;
+    color: white;
+  }
   .fa-google {
     background: #00A6FF;
     color: white;
   }
-  
+  .fa-camera {
+    background: #00A6FF;
+    color: white;
+  }
+  .fa-edit {
+    background: #00A6FF;
+    color: white;
+  }
+  .fa-upload {
+    background: #00A6FF;
+    color: white;
+  }
   .fa-linkedin {
     background: #00A6FF;
     color: white;
   }
+  .fa:hover{
+      background-color: rgba(80, 72, 72, 0.2);
+      text-decoration: none;
+      color: white;
+  }
 
 
-  @keyframes mymove {
+  /* @keyframes mymove {
     from {left: 0px;}
-    to {left: 10%;}
+    to {left: 50%;}
+  } */
+
+ 
+  #pro{
+      align-content: center;
+      border-radius: 50%;
+      text-align: center;
+      width: 50%;
   }

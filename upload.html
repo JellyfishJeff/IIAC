@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files to IIAC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&amp;family=Roboto:wght@300&amp;display=swap"
+        rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="patient.css">
+    <script src="patient.js"></script>
+</head>
+
+<body>
+    <nav class="navbar sticky-top" style="background-color: rgba(255,255,255,.5); font-size: larger;">
+
+        <div>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn" style="background-color: #00A6FF; color: white;" type="submit">Search</button>
+            </form>
+        </div>
+        <ul class="nav nav-pills justify-content-end sticky-top" style="color: #00A6FF;">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="me.html">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="upload.html">Upload</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">My profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+
+        <h3>Upload Files to your IIAC account</h3>
+        <br>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <input type="text" class="form-control" id="pwd" placeholder="institution" name="pswd">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="document type" name="email">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="password" name="pswd">
+            </div>
+        </form> 
+    </div>
+    <br>
+    <!-- uploading icons: scanning from app, uploading from device or typing it in by filling form -->
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col">
+                <a class="fa fa-upload" style="color: white;"></a>
+                <p style="text-align: center;">Upload from device</p>
+            </div>
+            <div class="col">
+                <a class="fa fa-camera" style="color: white;"></a>
+                <p style="text-align: center;">Scan file</p>
+            </div>
+            <div class="col">
+                <a href="#manual" data-toggle="collapse"  data-target="#manual" class="fa fa-edit"></a>
+                <p style="text-align: center;">Manual entry</p>
+            </div>
+        </div>
+        <hr style="border-color: #00A6FF;">
+    </div>
+    <br>
+    <div class="container collapse" id="manual">
+        <form action="/action_page.php">
+            <div class="form-group">
+                <input type="text" class="form-control" id="pwd" placeholder="issuing body" name="pswd">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="date" name="email">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="location" name="pswd">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="prescription" name="email">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="comments" name="pswd">
+            </div>
+        </form> 
+        <br>
+        <button type="submit" style="background-color: #00A6FF; color: white;" class="btn">Submit</button>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-light">
+        <div class="container">
+            <br>
+            <br>
+            <div class="row">
+
+                <div class="col">
+                    <h6>Discalimer</h6>
+                    <p>
+                        The IIAC website was built solely for learning purposes and for the Nextech Coding
+                        Competition 2020. Pictures and statistic do not belong to IIAC. Any and every
+                        information
+                        here was brought by Jeff Priso, who holds the rights to this website.
+                    </p>
+                </div>
+                <div class="col">
+                    <h6>About Us</h6>
+                    <p>
+                        The IIAC Co. is a team of well informed and trained technologists. Ranging from medical
+                        careers to UX careers and everything in between, the IIAC team is well equiped to
+                        enhance
+                        health care in third world coutries.
+                    </p>
+                </div>
+                <div class="col">
+                    <h6>Contact Us</h6>
+                    <p>
+                        Institutions and individuals can contact us using any of the following means.
+                    </p>
+                    <a href="https://facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+                    <a href="mailto:prisoeli0@gmail.com" class="fa fa-google"></a>
+                    <a href="https://linkedIn.com" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <br>
+
+            <hr style="border-top:.5px solid #00A6FF;">
+            </hr>
+
+            <br>
+            <div class="row">
+                <a class="col" href="#">Careers</a>
+                <a class="col" href="#">Terms</a>
+                <a class="col" href="#">Partnerships</a>
+                <a class="col" href="#">Comments</a>
+                <a class="col" href="#">Donate</a>
+            </div>
+            <br>
+            <br>
+            <p style="text-align: center;">@ 2020 Jeff Priso IIAC. All rights reserved.</p>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>
