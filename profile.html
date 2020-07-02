@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="patient.css">
@@ -43,7 +44,11 @@
                 <a class="nav-link" href="profile.html">My profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="help.html">Help</a>
+                <a class="nav-link" href="help.html"><i class='far fa-question-circle' style='font-size:24px'></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="help.html"><i class="fas fa-cog fa-pulse"></i>
+                </a>
             </li>
         </ul>
     </nav>
@@ -69,8 +74,14 @@
              <p>Age: 23 years</p>
              <p>Height: 5'09</p>
              <p>Weight: 285 lbs</p>
-             <a href="#" style="color: #00A6FF;">More...</a>
-
+             <a href="#hiddeninfo" data-toggle="collapse"  style="color: #00A6FF;">More...</a>
+            <div id="hiddeninfo" class="collapse">
+             <p>Location: Yaounde, Cameroon</p>
+             <p>Coping groups: N/A</p>
+             <p>Age: 23 years</p>
+             <p>Height: 5'09</p>
+             <p>Weight: 285 lbs</p>
+            </div>
         </div>
         
     </div>

@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="patient.css">
@@ -44,18 +45,22 @@
                 <a class="nav-link" href="profile.html">My profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="help.html">Help</a>
+                <a class="nav-link" href="help.html" data-target="blank"><i class='far fa-question-circle' style='font-size:24px'></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="help.html" data-target="blank"><i class="fas fa-cog fa-pulse"></i>
+                </a>
             </li>
         </ul>
     </nav>
-    <header class="header1">
+    <header class="header2">
         <div class="containimage">
             <div class="headercontainer">
                 <h1 style="color: #00A6FF; text-align: center;">Keep track of your <br> Medical Information anywhere.
                 </h1>
             </div>
         </div>
-        <ul class="nav justify-content-center sticky-top" style="color: #00A6FF;">
+        <ul class="nav nav-pills justify-content-center sticky-top" style="color: #00A6FF;">
             <li class="nav-item">
                 <a class="nav-link" href="#records" data-toggle="collapse">My Records</a>
             </li>
@@ -72,7 +77,21 @@
     <div class="container" id="accordion">
         <div id="display" class="collapse show" data-parent="#accordion">
             <p>All of your medical files condensed in a single area. Anywhere and everywhere you go, your information
-                follows you and is a the tip of your finger. </p>
+                follows you and is a the tip of your finger. Using the Me tab, you can now have access to different
+                features that relate to you. </p>
+                <p>Overview of recent activities and general information about patient.</p>
+               <h4>More Links</h4> 
+            <ul>
+                <li>
+                <a href="#"> My coping groups </a>
+                </li>
+                <li>
+                    <a href="#"> My medical institution</a>
+                </li>
+                <li>
+                    <a href="#">More options</a>
+                </li>
+            </ul>    
         </div>
         <div id="records" class="collapse" data-parent="#accordion">
             <p>
@@ -83,6 +102,28 @@
                 expedita nobis error sit magni hic doloribus eaque quasi quibusdam cum aliquam! Esse recusandae aliquid
                 quasi? Saepe, harum quibusdam.
             </p>
+            <br>
+            <h4 style="color: #00A6FF;">Most Recent Activity</h4>
+            <div class="media border p-3">
+                <img src="brain.jpg" alt="John Doe" class="mr-3 mt-3" style="width:100px;">
+                <div class="media-body">
+                    <h4>John Doe <small><i>Added on February 19, 2016 at Hopital General, Yaounde, Cameroon</i></small>
+                    </h4>
+                    <p>Record: X-ray of the brain.</p>
+                    <p>Comments: Get more sleep and take this and that.</p> <a href="#" style="color: #00A6FF;">Learn more...</a>
+                </div>
+            </div>
+            <br>
+            <div class="media border p-3">
+                <img src="prescription.jpeg" alt="John Doe" class="mr-3 mt-3" style="width:100px;">
+                <div class="media-body">
+                    <h4>John Doe <small><i>Added on July 25, 2018 at Hopital General, Yaounde, Cameroon</i></small></h4>
+                    <p>Record: Prescription</p>
+                    <p>Comments: Do this and do that to keep your mind away from sad memories.</p>  <a href="#" style="color: #00A6FF;">Learn more...</a>
+                </div>
+            </div>
+            <br>
+            <a href="#" style="color: #00A6FF;">More...</a>
         </div>
         <div id="medication" class="collapse" data-parent="#accordion">
             <p>
@@ -92,16 +133,57 @@
                 voluptatum rerum soluta vel eligendi magnam obcaecati, facilis deleniti dicta? Illo earum voluptas
                 recusandae aliquid debitis non perferendis.
             </p>
+            <ul>
+                <li style="color: #00A6FF;"><a href="#">Quiet Herb Drops</a></li>
+                <p> Prescribed on July 12, 2017 by Doctor Jane Tchapcheu at Hopital General, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique.</p>
+                <li style="color: #00A6FF;"><a href="#">Redicalm</a></li>
+                <p>Prescribed on March 27, 2017 by Doctor Jane Tchapcheu at Hopital General, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique</p>
+                <li style="color: #00A6FF;"><a href="#">Natural Mood Enhancement</a></li>
+                <p>Prescribed on November, 13 2016 by Doctor Jane Tchapcheu at Hopital General, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique</p>
+            </ul>
+            <a href="#" style="color: #00A6FF;">Load more</a>
         </div>
         <div id="reminders" class="collapse" data-parent="#accordion">
             <p>
-                Reminders to take meds, appointments, diets, 
+                Reminders to take meds, appointments, diets,
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia possimus odio ducimus
                 cupiditate, voluptatum quae inventore dolore quas, delectus saepe nam nostrum quis consectetur. Rerum
                 error ea amet hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos debitis
                 voluptate ullam quod reprehenderit est accusantium nemo modi quae itaque ex sequi inventore, veniam ea
                 tempora nisi aliquam. Voluptates, totam?
             </p>
+            <ul>
+                <li style="color: #00A6FF;"><a href="#">Appointment with Dr Nadine</a></li>
+                <p> August 13, 2018 @10:00 a.m at Hopital General, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique.</p>
+                <li style="color: #00A6FF;"><a href="#">Coping group Meeting</a></li>
+                <p> August 29, 2018 @5:00 p.m at My Friend Agency, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique.</p>
+                <li style="color: #00A6FF;"><a href="#">Event</a></li>
+                <p> December 18, 2018 @7:00 p.m, Christmas at Hopital General, Yaounde, Cameroon.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique.</p>
+                <li style="color: #00A6FF;"><a href="#">Medicine</a></li>
+                <p> December 28, 2018 @9:00 a.m, Take Quiet Herb Medicine 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi ab illo
+                    officiis, odio quaerat omnis! Laboriosam odit nemo minus explicabo, ducimus delectus odio temporibus
+                    iusto fugiat nam similique.</p>
+            </ul>
+            <a href="#" style="color: #00A6FF;">Load more</a>
         </div>
 
 
